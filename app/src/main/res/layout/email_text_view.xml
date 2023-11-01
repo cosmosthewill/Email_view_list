@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:weightSum="10">
+    <TextView
+        android:id="@+id/name_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D"
+        android:textColor="@color/white"
+        android:background="@drawable/name_icon"
+        android:textSize="45sp"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_weight="10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DaZ"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:maxLines="1"/>
+        <TextView
+            android:id="@+id/title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Title"
+            android:textColor="#80000000"
+            android:textSize="15sp"
+            android:maxLines="1"/>
+        <TextView
+            android:id="@+id/body_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email body"
+            android:textColor="#80000000"
+            android:textSize="15sp"
+            android:maxLines="1"/>
+    </LinearLayout>
+    <CheckBox
+        android:layout_weight="1"
+        android:id="@+id/star_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/star_checkbox"
+        android:paddingBottom="30dp"/>
+</LinearLayout>
